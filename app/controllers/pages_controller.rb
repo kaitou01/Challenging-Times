@@ -6,5 +6,6 @@ class PagesController < ApplicationController
   end
 
   def lizards
+    @number = params[:number]
   end
 end
