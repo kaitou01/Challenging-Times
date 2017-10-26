@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get 'lizards/:number', to: 'pages#lizards', as: 'lizards', number: /\d+/
 
   get 'pets', to: 'pets#index', as: 'pets'
+
+  get 'pets/:id', to: 'pets#show', as: 'pet', id: /\d+/
 end
