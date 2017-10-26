@@ -1,4 +1,4 @@
 
 <% @pets.each do |pet| %>
-  <p><%= pet.name %> - <%= pet.food %></p>
+  <%= render partial: 'pet', object: pet %>
 <% end %>
